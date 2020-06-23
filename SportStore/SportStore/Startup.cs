@@ -28,8 +28,12 @@ namespace SportStore
             app.UseDeveloperExceptionPage();
             app.UseStaticFiles();
             app.UseStatusCodePages();
-            app.UseMvc(routes => { 
-            
+            app.UseMvc(routes => {
+
+                routes.MapRoute(
+                    name: "defaultSporty",
+                    template: "{controller=Product}/{action=List}/{Id?}"
+                    );
             });
             
             

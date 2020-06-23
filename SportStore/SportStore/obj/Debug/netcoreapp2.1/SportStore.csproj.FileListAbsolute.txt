@@ -25,3 +25,5 @@ C:\Users\molin\Documents\WebApplic\Projects\SportStore\SportStore\obj\Debug\netc
 C:\Users\molin\Documents\WebApplic\Projects\SportStore\SportStore\obj\Debug\netcoreapp2.1\SportStore.dll
 C:\Users\molin\Documents\WebApplic\Projects\SportStore\SportStore\obj\Debug\netcoreapp2.1\SportStore.pdb
 C:\Users\molin\Documents\WebApplic\Projects\SportStore\SportStore\obj\Debug\netcoreapp2.1\SportStore.csproj.CopyComplete
+C:\Users\molin\Documents\WebApplic\Projects\SportStore\SportStore\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\molin\Documents\WebApplic\Projects\SportStore\SportStore\obj\Debug\netcoreapp2.1\Razor\Views\Product\List.cshtml.g.cs
