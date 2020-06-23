@@ -16,17 +16,51 @@
             <th> StudentID</th>
         </tr>
 
-        @foreach (Student st in Model)
+       @foreach (Student st in Model)
         {
-         <tr>
-                <td> @st.Firstname</td>
-                <td> @st.LastName</td>
-                <td> @st.Email</td>
-                <td> @st.Gpa</td>
-                <td> @st.FullTime</td>
-                <td> @st.CourseCode</td>
-                <td> @st.StudentID</td>
-         </tr>
+    <tr>
+        <td> @st.Firstname</td>
+        <td> @st.LastName</td>
+        <td> @st.Email</td>
+        @*  @{
+        if (st.Gpa > 4)
+        {
+            <td> @st.Gpa +++Honor Merit+++</td>
+        }
+        else if (st.Gpa < 2)
+        {
+            <td> @st.Gpa </td>
+            @: ---Bad GPA---
+        }
+        else
+        {
+            <td> @st.Gpa ===Keep working===</td>
+        }
+         }
+
+        *@
+
+
+        <td>
+            @st.Gpa
+            
+            @if (st.Gpa > 4)
+            {
+                @: - Good
+            }
+            else if (st.Gpa < 2)
+            {
+                @: - Bad
+            }
+            else
+            {
+               @: = Keep working
+            }
+        </td>
+        <td> @st.FullTime</td>
+        <td> @st.CourseCode</td>
+        <td> @st.StudentID</td>
+    </tr>
         
         }
         

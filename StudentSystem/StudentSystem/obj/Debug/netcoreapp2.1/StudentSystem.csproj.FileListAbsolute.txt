@@ -55,3 +55,4 @@ C:\Users\molin\Documents\WebApplic\Projects\StudentSystem\StudentSystem\obj\Debu
 C:\Users\molin\Documents\WebApplic\Projects\StudentSystem\StudentSystem\obj\Debug\netcoreapp2.1\StudentSystem.Views.pdb
 C:\Users\molin\Documents\WebApplic\Projects\StudentSystem\StudentSystem\obj\Debug\netcoreapp2.1\StudentSystem.genruntimeconfig.cache
 C:\Users\molin\Documents\WebApplic\Projects\StudentSystem\StudentSystem\obj\Debug\netcoreapp2.1\StudentSystem.csproj.CopyComplete
+C:\Users\molin\Documents\WebApplic\Projects\StudentSystem\StudentSystem\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
