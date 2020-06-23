@@ -1,0 +1,47 @@
+﻿@model List<Student>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>List of Students</title>
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <table class="table table-primary">
+        
+        <tr>
+            <th> Firstname</th>
+            <th> LastName</th>
+            <th> Email</th>
+            <th> Gpa</th>
+            <th> FullTime</th>
+            <th> CourseCode</th>
+            <th> StudentID</th>
+        </tr>
+
+        @foreach (Student st in Model)
+        {
+         <tr>
+                <td> @st.Firstname</td>
+                <td> @st.LastName</td>
+                <td> @st.Email</td>
+                <td> @st.Gpa</td>
+                <td> @st.FullTime</td>
+                <td> @st.CourseCode</td>
+                <td> @st.StudentID</td>
+         </tr>
+        
+        }
+        
+
+    </table>
+
+
+
+</body>
+</html>

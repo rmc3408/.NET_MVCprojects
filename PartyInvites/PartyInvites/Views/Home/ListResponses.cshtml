@@ -1,0 +1,40 @@
+﻿@model IEnumerable<PartyInvites.Models.GuestResponse>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="\lib\bootstrap\css\bootstrap.min.css" />
+    <title>ListResponses</title>
+</head>
+<body>
+    <div class="panel-body">
+        <h2> Here is te list who is going:</h2>
+
+        <table class="table table-condensed table-striped table-bordered ">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+            </tr>
+
+            @foreach (PartyInvites.Models.GuestResponse item in Model)
+            {
+                <tr>
+                    <td>@item.Name </td>
+                    <td>@item.Email </td>
+                    <td>@item.Phone </td>
+                </tr>
+
+            }
+        </table>
+    </div>
+    
+
+</body>
+</html>
