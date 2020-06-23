@@ -12555,11 +12555,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\molin\\Documents\\WebApplic\\Labs\\StudentSystem\\StudentSystem\\StudentSystem.csproj",
+      "projectUniqueName": "C:\\Users\\molin\\Documents\\WebApplic\\Projects\\StudentSystem\\StudentSystem\\StudentSystem.csproj",
       "projectName": "StudentSystem",
-      "projectPath": "C:\\Users\\molin\\Documents\\WebApplic\\Labs\\StudentSystem\\StudentSystem\\StudentSystem.csproj",
+      "projectPath": "C:\\Users\\molin\\Documents\\WebApplic\\Projects\\StudentSystem\\StudentSystem\\StudentSystem.csproj",
       "packagesPath": "C:\\Users\\molin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\molin\\Documents\\WebApplic\\Labs\\StudentSystem\\StudentSystem\\obj\\",
+      "outputPath": "C:\\Users\\molin\\Documents\\WebApplic\\Projects\\StudentSystem\\StudentSystem\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
