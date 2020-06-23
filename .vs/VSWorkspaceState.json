@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\StudentSystem"
+    "\\StudentSystem\\StudentSystem",
+    "\\StudentSystem\\StudentSystem\\Views",
+    "\\StudentSystem\\StudentSystem\\Views\\Home"
   ],
-  "SelectedNode": "\\StudentSystem\\StudentSystem.sln",
+  "SelectedNode": "\\StudentSystem",
   "PreviewInSolutionExplorer": false
 }
