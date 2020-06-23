@@ -1,24 +1,14 @@
 ﻿@model Student
 
 @{
-    Layout = null;
+    Layout = "_BasicLayout";
+    ViewBag.Title = "Student Home";
 }
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>List of name</title>
-    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-</head>
-<body>
     <div class="jumbotron-fluid">
-        <h1> Name : @Student.Firstname</h1>
+        <h1> Name : @Model.Firstname</h1>
         <a asp-action="LStudents" class="page-link">List of Students</a>
 
     </div>
-    
-    
-</body>
-</html>
+   
