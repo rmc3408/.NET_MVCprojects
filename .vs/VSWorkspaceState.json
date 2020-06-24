@@ -1,10 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\StudentSystem\\StudentSystem",
-    "\\StudentSystem\\StudentSystem\\Views",
-    "\\StudentSystem\\StudentSystem\\Views\\Home"
+    "\\SportStore"
   ],
-  "SelectedNode": "\\StudentSystem",
+  "SelectedNode": "\\SportStore\\SportStore.sln",
   "PreviewInSolutionExplorer": false
 }

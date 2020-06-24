@@ -7,7 +7,7 @@
 @foreach (Product pt in Model)
 {
     <h2>@pt.Name </h2>
-    <h4>@pt.Price </h4>
+    <h4>@pt.Price.ToString("c") </h4>
 }
 
 
