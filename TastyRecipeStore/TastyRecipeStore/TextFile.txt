@@ -1,0 +1,53 @@
+﻿<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+-----------------------------------------------------------------
+
+<thead>
+            <tr>
+                <td>Name of Recipe</td>
+                <td>Chef</td>
+                <td>Preparation time</td>
+                <td>Ingredients</td>
+                <td>Description</td>
+            </tr>
+        </thead>
+        <tr>
+            <td> Cesar Salad </td>
+            <td> Luana </td>
+            <td> 10 </td>
+            <td> Lettuce, tomatoes and onions </td>
+            <td> Health and light and Cheap </td>
+        </tr>
+        <tr>
+            <td> Hamburger </td>
+            <td> Raphael </td>
+            <td> 15 </td>
+            <td> Lettuce, beef patty and buns </td>
+            <td> For Hungry Man </td>
+        </tr>
+        <tr>
+            <td> Cake </td>
+            <td> jennifer </td>
+            <td> 30 </td>
+            <td> Flour, eggs, milk and Chocolate </td>
+            <td> Delicious cake  birthdays party </td>
+        </tr>
