@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using TastyRecipeStore.Models;
 
 namespace TastyRecipeStore.Controllers
@@ -11,7 +7,6 @@ namespace TastyRecipeStore.Controllers
     {
         public ViewResult Index()
         {
-            
             return View();
         }
 
@@ -28,24 +23,22 @@ namespace TastyRecipeStore.Controllers
             //Add Object from FORM to the List<recipe>
             Repository.AddToList(recipeFromForm);
 
-
             return View("Index");
         }
+
         public ViewResult List()
         {
-            
             return View(Repository.PackOfRecipe);
         }
+
         public ViewResult ViewRecipe()
         {
-
             return View(Repository.PackOfRecipe);
         }
+
         public ViewResult Review()
         {
-
             return View();
         }
-
     }
 }

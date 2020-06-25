@@ -5,31 +5,52 @@
     ViewBag.Title = "Add New Recipe";
 }
 
+<form asp-action="Form" class="form-horizontal" method="post">
 
+    <fieldset>
 
-    <form asp-action="Form" method="post">
-        <div class="form-group">
-            <label asp-for="Name">Recipe name:</label>
-            <input asp-for="Name" type="text">
-        </div>
+        <legend>Describe your Recipe...</legend>
 
         <div class="form-group">
-            <label asp-for="PreparationTime">Preparation Time:</label>
-            <input type="text" asp-for="PreparationTime">
+            <label class="col-md-4 control-label" asp-for="Name">Recipe Name</label>
+            <div class="col-md-4">
+                <input id="Name" asp-for="Name" name="Name" type="text" placeholder="" class="form-control input-md">
+            </div>
         </div>
+
         <div class="form-group">
-            <label asp-for="Chef">Chef:</label>
-            <input type="text" asp-for="Chef">
+            <label asp-for="Description" class="col-md-4 control-label">Description of Recipe: </label>
+            <div class="col-md-4">
+                <textarea asp-for="Description" class="form-control" cols="50" rows="3" name="Description">Describe how it make you feel...</textarea>
+            </div>
         </div>
+
         <div class="form-group">
-            <label asp-for="Ingredient">Ingredient:</label>
-            <input type="text" asp-for="Ingredient">
+            <label class="col-md-4 control-label" asp-for="Chef">Chef's Name</label>
+            <div class="col-md-4">
+                <input id="Chef" asp-for="Chef" name="Chef" type="text" placeholder="" class="form-control input-md">
+            </div>
         </div>
+
         <div class="form-group">
-            <label asp-for="Description">Description:</label>
-            <input type="text" asp-for="Description">
+            <label class="col-md-4 control-label" asp-for="PreparationTime">Preparation Time:</label>
+            <div class="col-md-2">
+                <input id="PreparationTime" asp-for="PreparationTime" name="PreparationTime" type="text" placeholder="min" class="form-control input-md">
+            </div>
         </div>
-        <div class="btn-group-lg">
-            <button type="submit">SAVE RECIPE</button>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" asp-for="Ingredient">Ingredients: </label>
+            <div class="col-md-4">
+                <textarea asp-for="Ingredient" class="form-control" id="Ingredient" name="Ingredient"></textarea>
+            </div>
         </div>
-    </form>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="singlebutton"></label>
+            <div class="col-md-4">
+                <button id="singlebutton" name="singlebutton" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </fieldset>
+</form>

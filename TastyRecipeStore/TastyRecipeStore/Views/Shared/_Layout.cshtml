@@ -9,35 +9,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
 </head>
 <body>
-    
 
-    
-        
-        <div class="jumbotron jum">
-            <div class="container justify-content-lg-center" style="align-content:center">
-                <div class="img-t">
-                    <img src="~/images/chef.png">
-
-                </div>
-                <h1 class="titlefont">@ViewBag.Title</h1>
-                <p>This is a template for a simple marketing or informational website. </p>
-                <p class="d-inline"><a class="btn btn-primary btn-lg btn-inline-block" asp-action="Index" role="button">Home Page »</a></p>
-                <p class="d-inline"><a class="btn btn-primary btn-lg btn-inline-block" asp-action="List" role="button">List of Recipes »</a></p>
-                <p class="d-inline"><a class="btn btn-primary btn-lg btn-inline-block" asp-action="Form" role="button">Add New Recipe »</a></p>
+    <div class="jumbotron jum">
+        <div class="container justify-content-lg-center" style="align-content:center">
+            <div class="img-t">
+                <img src="~/images/chef.png">
             </div>
+            <h1 id="titlefont">@ViewBag.Title</h1>
+            <p>This is a template for a simple marketing or informational website. </p>
+            <p class="d-inline"><a class="btn btn-primary btn-lg btn-inline-block" asp-action="Index" role="button">Home Page »</a></p>
+            <p class="d-inline"><a class="btn btn-primary btn-lg btn-inline-block" asp-action="List" role="button">List of Recipes »</a></p>
+            <p class="d-inline"><a class="btn btn-primary btn-lg btn-inline-block" asp-action="Form" role="button">Add New Recipe »</a></p>
         </div>
-    
+    </div>
 
+    <div class="container">
+        @RenderBody()
+    </div>
 
-
-        <div class="container">
-            @RenderBody()
-        </div>
-
-
-
-<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
 </body>
 </html>
