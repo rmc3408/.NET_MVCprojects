@@ -7,7 +7,14 @@ using Microsoft.EntityFrameworkCore.Design;
 
 namespace SportStore.Models
 {
-    public class DataB 
+    public class DataB : DbContext
     {
+        public DataB(DbContextOptions<DataB> options) : base(options)
+        {
+
+        }
+        public DbSet<Product> productsInDatabase { get; set; }
+
+
     }
 }
