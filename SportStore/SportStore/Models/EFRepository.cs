@@ -14,8 +14,7 @@ namespace SportStore.Models
             context = ctx;
         }
 
-        public 
-
+        public IQueryable<Product> PackProducts => context.ProductsInDatabase ;
 
     }
 }

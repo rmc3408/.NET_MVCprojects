@@ -5,33 +5,37 @@
     ViewBag.Title = "List of All Recipes";
 }
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Cesar Salad</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-        <p><a class="btn btn-default" asp-action="ViewRecipe" role="button">View details »</a></p>
-        <p><a class="btn btn-default" asp-action="Review" role="button">Write a Review »</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Extra Cheese Burger</h2>
-        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-        <p><a class="btn btn-default" asp-action="ViewRecipe" role="button">View details »</a></p>
-        <p><a class="btn btn-default" asp-action="Review" role="button">Write a Review »</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Chocolate pie</h2>
-        <p>Donec sed odio dui. Cdapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        <p><a class="btn btn-default" asp-action="ViewRecipe" role="button">View details »</a></p>
-        <p><a class="btn btn-default" asp-action="Review" role="button">Write a Review »</a></p>
-    </div>
-    @foreach (var data in Model)
-    {
-        <div class="col-md-4">
-            <h2>@data.Name</h2>
-            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+    <div class="row">
+        <div class="col">
+            <h2><a asp-action="ViewRecipe">Chicken Caesar Salad</a></h2>
+            <p>A salad is a green salad of romaine lettuce, chicken and croutons dressed with lemon juice, olive oil, egg, Worcestershire sauce, anchovies, garlic, Dijon mustard, Parmesan cheese, and black pepper. In its original form, this salad was prepared and served tableside.</p>
             <p><a class="btn btn-default" asp-action="ViewRecipe" role="button">View details »</a></p>
             <p><a class="btn btn-default" asp-action="Review" role="button">Write a Review »</a></p>
         </div>
 
-    }
-</div>
+        <hr />
+        <div class="col">
+            <h2><a asp-action="ViewRecipe">Extra Cheese Burger</a></h2>
+            <p>A cheeseburger is a hamburger topped with cheese. Traditionally, the slice of cheese is placed on top of the meat patty, but the burger can include variations in structure, ingredients and composition. The cheese is usually added to the cooking hamburger patty shortly before serving.</p>
+            <p><a class="btn btn-default" asp-action="ViewRecipe" role="button">View details »</a></p>
+            <p><a class="btn btn-default" asp-action="Review" role="button">Write a Review »</a></p>
+        </div>
+        <hr />
+        <div class="col">
+            <h2><a asp-action="ViewRecipe">Chocolate pie</a></h2>
+            <p>This Easy Chocolate Pie is so simple but decadent. And yet not overly sweet. You only need 5 pantry ingredients for the filling and 5 minutes of prep. The hardest part is waiting for it to be done baking!</p>
+            <p><a class="btn btn-default" asp-action="ViewRecipe" role="button">View details »</a></p>
+            <p><a class="btn btn-default" asp-action="Review" role="button">Write a Review »</a></p>
+        </div>
+        
+        @foreach (var data in Model)
+        {
+            <hr />
+            <div class="col">
+                <h2><a asp-action="ViewRecipe">@data.Name</a></h2>
+                <p><a class="btn btn-default" asp-action="ViewRecipe" role="button">View details »</a></p>
+                <p><a class="btn btn-default" asp-action="Review" role="button">Write a Review »</a></p>
+            </div>
+           
+        }
+    </div>

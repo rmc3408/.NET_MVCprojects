@@ -13,7 +13,7 @@ namespace SportStore.Models
         {
 
         }
-        public DbSet<Product> productsInDatabase { get; set; }
+        public DbSet<Product> ProductsInDatabase { get; set; }
 
 
     }

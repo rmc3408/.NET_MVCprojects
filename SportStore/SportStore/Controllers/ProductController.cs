@@ -17,9 +17,7 @@ namespace SportStore.Controllers
             reps = r;
         }
 
-        public ViewResult List()
-        {
-            return View(reps.PackProducts);
-        }
+        public ViewResult List() => View(reps.PackProducts);
+        
     }
 }

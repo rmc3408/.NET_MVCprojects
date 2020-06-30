@@ -29,6 +29,15 @@ label {
     width: 140px;
     text-align: left;
 }
+hr {
+    border-top:none;
+    border-bottom: 10px dotted dodgerblue;
+    height: 12px;
+    margin-top: 10px;
+    margin-bottom:40px;
+    margin-left: 10px;
+    width: 200px;
+}
 
 input {
     display: inline-block;
@@ -41,4 +50,5 @@ input {
 input > * {
     display: inline-block;
     width: 60%;
+
 }
