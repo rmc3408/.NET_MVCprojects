@@ -9,7 +9,7 @@ using SportStore.Models;
 namespace SportStore.Migrations
 {
     [DbContext(typeof(DataB))]
-    [Migration("20200630022758_Initial")]
+    [Migration("20200702113204_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
