@@ -7,7 +7,11 @@
 @foreach (Product pt in Model)
 {
     <h2>@pt.Name </h2>
+    <h4>@pt.Description </h4>
     <h4>@pt.Price.ToString("c") </h4>
+    <h4>@pt.Category </h4>
+
+
 }
 
 

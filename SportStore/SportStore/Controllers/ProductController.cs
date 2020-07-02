@@ -10,6 +10,7 @@ namespace SportStore.Controllers
     public class ProductController : Controller
     {
         private IProductRepository reps;
+        public const int pageSize = 4;
 
 
         public ProductController(IProductRepository r)
@@ -17,7 +18,12 @@ namespace SportStore.Controllers
             reps = r;
         }
 
-        public ViewResult List() => View(reps.PackProducts);
+        public ViewResult List(int pPage = 1) => 
+            
+            View(reps.PackProducts
+                .OrderBy(p => p.ProductID)
+                .Skip((pPage - 1)* pageSize)
+                .Take(pageSize));
         
     }
 }
