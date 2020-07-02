@@ -10,6 +10,7 @@ namespace SportStore.Models
         public static void EnsurePop(IApplicationBuilder app)
         {
             DataB context = app.ApplicationServices.GetRequiredService<DataB>();
+            
             context.Database.Migrate();
 
             if (!context.ProductsInDatabase.Any())
@@ -18,17 +19,24 @@ namespace SportStore.Models
 
                     new Product
                     {
-                        Name = "Football",
-                        Description = "Good ball",
-                        Price = 25.50,
-                        Category = "camp"
+                        Name = "SoccerBall",
+                        Description = "hard ball",
+                        Price = 15.50,
+                        Category = "Outside"
                     },
                     new Product
                     {
-                        Name = "Soccer",
-                        Description = "small ball",
-                        Price = 15.50,
-                        Category = "outside camp"
+                        Name = "Tennis",
+                        Description = "tiny and yellow ball",
+                        Price = 2.00,
+                        Category = "Outside"
+                    },
+                    new Product
+                    {
+                        Name = "Swimming Glasses",
+                        Description = "Waterproof",
+                        Price = 7.00,
+                        Category = "Inside"
                     }
 
                     );
