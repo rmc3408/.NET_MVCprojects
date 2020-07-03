@@ -5,14 +5,20 @@
 
 @foreach (Product pt in Model.PackProducts)
 {
-   
-    <h2>@pt.Name </h2>
-    <h6>@pt.Description </h6>
-    <h4>@pt.Price.ToString("c") </h4>
-    <h4>@pt.Category </h4>
+    
+    <div class="card media card-deck-outline" >
+        <h2 class="card-title">@pt.Name </h2>
+        <h6 class="card-text">@pt.Description </h6>
+        <h4 class="mx-auto btn-warning" style="width: 100px;">@pt.Price.ToString("c") </h4>
+        <h4 class="page-item-warning">@pt.Category </h4>
+    </div>
+    
 
 
 }
-
-<div page-model="@Model.PageInfo" page-action="List"></div>
-
+<div page-model="@Model.PageInfo" 
+     page-action="List"
+     page-classes-enabled="true"
+     page-class="btn"
+     page-class-normal="btn-secondary"
+     page-class-selected="btn-primary"></div>

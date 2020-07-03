@@ -4,11 +4,17 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Sport Store</title>
-    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link asp-href-include="~/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
-    <div>
-        @RenderBody()
+    <div class="row m-4 p-6">
+        <div id="categories" class="col-3">
+            Put something useful here later
+        </div>
+        <div class="col-9">
+            @RenderBody()
+        </div>
     </div>
+    
 </body>
 </html>
