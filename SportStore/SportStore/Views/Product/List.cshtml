@@ -1,17 +1,18 @@
-﻿@model IQueryable<Product>
-
+﻿@model ProductsViewModel
 @{
     ViewData["Title"] = "List";
 }
 
-@foreach (Product pt in Model)
+@foreach (Product pt in Model.PackProducts)
 {
+   
     <h2>@pt.Name </h2>
-    <h4>@pt.Description </h4>
+    <h6>@pt.Description </h6>
     <h4>@pt.Price.ToString("c") </h4>
     <h4>@pt.Category </h4>
 
 
 }
 
+<div page-model="@Model.PageInfo" page-action="List"></div>
 
