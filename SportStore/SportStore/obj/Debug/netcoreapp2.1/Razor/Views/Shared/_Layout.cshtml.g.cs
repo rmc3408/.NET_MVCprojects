@@ -57,12 +57,12 @@ using SportStore.Models.ViewModels;
             WriteLiteral("<!DOCTYPE html>\r\n\r\n<html>\r\n");
             EndContext();
             BeginContext(27, 180, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "569bf432400a474b82a0b140a3ac5f2d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "38b348aa981c483a9b1a2727cd76b5b2", async() => {
                 BeginContext(33, 97, true);
                 WriteLiteral("\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>Sport Store</title>\r\n    ");
                 EndContext();
                 BeginContext(130, 68, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "125430305a1242c59f799ec79917a22c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "41db62fbe4c74307b6988dafefea323c", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_LinkTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.LinkTagHelper>();
@@ -97,7 +97,7 @@ using SportStore.Models.ViewModels;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(209, 242, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "805375cdf5b241eda802112dbd399f78", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c5cd870ec5614492ab3a227fe0cc0917", async() => {
                 BeginContext(215, 180, true);
                 WriteLiteral("\r\n    <div class=\"row m-4 p-6\">\r\n        <div id=\"categories\" class=\"col-3\">\r\n            Put something useful here later\r\n        </div>\r\n        <div class=\"col-9\">\r\n            ");
                 EndContext();
