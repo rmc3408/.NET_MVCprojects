@@ -11,6 +11,9 @@ namespace PatientSystem.Models
 
         private static List<Patient> sicks = new List<Patient>();
 
+        //Same as bellow
+        //public static IEnumerable<Patient> Sicks => sicks;
+        //public static List<Patient> Sicks => sicks;
         public static IEnumerable<Patient> Sicks 
         {
             get 
