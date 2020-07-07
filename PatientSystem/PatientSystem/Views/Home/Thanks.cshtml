@@ -1,16 +1,16 @@
-﻿
-@{
-    Layout = null;
+﻿@model Patient
+
+@{ 
+    Layout = "_Layout";
+    ViewBag.Title = "Thanks";
 }
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Thanks</title>
-</head>
-<body>
     <h1> THANK YOU! </h1>
-</body>
-</html>
+    <p>
+        The Patient <span class="blockquote">@Model.Name</span> has been successfully
+        registered as <span class="blockquote">@Model.Occupation</span>
+        on <span class="blockquote">@Model.CurrentDateAndTime</span> !!
+
+</p>
+   

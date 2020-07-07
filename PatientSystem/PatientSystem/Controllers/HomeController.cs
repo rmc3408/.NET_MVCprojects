@@ -1,27 +1,35 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using PatientSystem.Models;
+using System;
+using System.Linq;
 
 namespace PatientSystem.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        [HttpGet]
+        public ViewResult Index()
         {
-            
+            int regtime = DateTime.Now.Hour;
+            ViewBag.Greeting = regtime >= 12 ? "Good Afternoon" : "Good Morning";
             return View("Register");
         }
-        
-        [HttpGet]
-        public IActionResult List()
-        {
 
-            return View("List");
+        [HttpPost]
+        public ViewResult Thanks(Patient thesick)
+        {
+            DateTime clicked = DateTime.Now;
+            thesick.CurrentDateAndTime = clicked;
+
+            Repo.AddPatToRep(thesick);
+            return View(thesick);
         }
 
-        
+        public ViewResult List()
+        {
+            return View(Repo.Sicks.OrderBy(s => s.Name));
+        }
+
+
     }
 }

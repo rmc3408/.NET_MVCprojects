@@ -1,115 +1,105 @@
-﻿
+﻿@model Patient
+
 @{
-    Layout = null;
+    Layout = "_Layout";
+    ViewBag.Title = "Patient Registration";
 }
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Patient Registration</title>
-</head>
-<body>
 
-    <form class="form-horizontal" action="Thanks" method="post">
+<form class="form-horizontal" asp-action="Thanks" method="Post">
 
-        <fieldset>
 
-            <!-- Form Name -->
-            <legend>Form Name</legend>
+    <h1> @ViewBag.Greeting </h1>
 
-            <!-- Text input-->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="Name">Patient Name</label>
-                <div class="col-md-4">
-                    <input id="Name" name="Name" type="text" placeholder="" class="form-control input-md">
+    <fieldset>
 
-                </div>
+        <!-- Form Name -->
+        <legend>
+            Register Time: @DateTime.Now;
+
+        </legend>
+
+
+
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="Name">Patient Name</label>
+            <div class="col-md-4">
+                <input id="Name" asp-for="Name" type="text" placeholder="" class="form-control input-md">
+
             </div>
+        </div>
 
-            <!-- Text input-->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="age">Age</label>
-                <div class="col-md-4">
-                    <input id="age" name="age" type="text" placeholder="" class="form-control input-md">
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="age">Age</label>
+            <div class="col-md-4">
+                <input id="age" asp-for="Age" type="text" placeholder="" class="form-control input-md">
 
-                </div>
             </div>
+        </div>
 
-            <!-- Text input-->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="ocupation">Occupation</label>
-                <div class="col-md-4">
-                    <input id="ocupation" name="ocupation" type="text" placeholder="" class="form-control input-md">
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="ocupation">Occupation</label>
+            <div class="col-md-4">
+                <input id="ocupation" asp-for="Occupation" type="text" placeholder="" class="form-control input-md">
 
-                </div>
             </div>
+        </div>
 
-            <!-- Text input-->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="address">Address</label>
-                <div class="col-md-4">
-                    <input id="address" name="address" type="text" placeholder="" class="form-control input-md">
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="address">Address</label>
+            <div class="col-md-4">
+                <input id="address" asp-for="Address" type="text" placeholder="" class="form-control input-md">
 
-                </div>
             </div>
+        </div>
 
-            <!-- Multiple Checkboxes (inline) -->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="insurance">Has insurance?</label>
-                <div class="col-md-4">
-                    <label class="checkbox-inline" for="insurance-0">
-                        <input type="checkbox" name="insurance" id="insurance-0" value="1">
-                        Yes
-                    </label>
-                </div>
+        <!-- Multiple Checkboxes (inline) -->
+        <div class="form-group">
+            <label class="col-md-4 control-label">Has insurance?</label>
+            <div class="col-md-4">
+
+                <input type="checkbox" asp-for="Insurance" value="true">
+
+
             </div>
+        </div>
 
-            <!-- Multiple Checkboxes (inline) -->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="operation">Had Operations Before?</label>
-                <div class="col-md-4">
-                    <label class="checkbox-inline" for="operation-0">
-                        <input type="checkbox" name="operation" id="operation-0" value="1">
-                        Yes
-                    </label>
-                </div>
+        <!-- Multiple Checkboxes (inline) -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="operation">Had Operations Before?</label>
+            <div class="col-md-4">
+                <input type="checkbox" asp-for="Operation" value="true">
             </div>
+        </div>
 
-            <!-- Select Basic -->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="marital">Martial Status?</label>
-                <div class="col-md-4">
-                    <select id="marital" name="marital" class="form-control">
-                        <option value="1">Single</option>
-                        <option value="2">Married</option>
-                        <option value="3">Divorced</option>
-                        <option value="4">Widowed</option>
-                    </select>
-                </div>
+        <!-- Select Basic -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="marital">Martial Status?</label>
+            <div class="col-md-4">
+                <select id="marital" asp-for="Marital" class="form-control">
+                    <option value="Single">Single</option>
+                    <option value="Married">Married</option>
+                    <option value="divorced">Divorced</option>
+                    <option value="Windowed">Widowed</option>
+                </select>
             </div>
+        </div>
 
-            <!-- Button (Double) -->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="submit"></label>
-                <div class="col-md-8">
-                    <button id="submit" name="submit" class="btn btn-success">Register</button>
-                    
-                </div>
+        <!-- Button (Double) -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="submit"></label>
+            <div class="col-md-8">
+                <button id="submit" name="submit" class="btn btn-success">Register</button>
+
             </div>
+        </div>
 
-        </fieldset>
-    </form>
+    </fieldset>
+</form>
 
-
-
-
-
-
-
-
-
-
-</body>
-</html>

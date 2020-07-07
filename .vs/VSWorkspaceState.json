@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\SportStore\\SportStore",
+    "\\PatientSystem",
     "\\StudentSystem\\StudentSystem"
   ],
+  "SelectedNode": "\\PatientSystem\\PatientSystem.sln",
   "PreviewInSolutionExplorer": false
 }

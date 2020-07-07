@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace PatientSystem.Models
 {
-    public class Repo
+    public static class Repo
     {
 
-        private static IEnumerable<Patient> sicks = new List<Patient>();
+        private static List<Patient> sicks = new List<Patient>();
 
         public static IEnumerable<Patient> Sicks 
         {
@@ -18,9 +18,13 @@ namespace PatientSystem.Models
                 return sicks;
             }
         }
+        public static void AddPatToRep(Patient thesick)
+        {
+            sicks.Add(thesick);
 
+        }
 
-
+           
 
     }
 }

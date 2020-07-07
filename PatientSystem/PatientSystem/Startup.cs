@@ -18,8 +18,11 @@ namespace PatientSystem
         {
             app.UseDeveloperExceptionPage();
             app.UseStaticFiles();
-            app.UseMvcWithDefaultRoute();
             app.UseStatusCodePages();
+            app.UseMvcWithDefaultRoute();
+
+
+            
         }
     }
 }
