@@ -30,8 +30,10 @@
                     <td> @item.Age </td>
                     <td> @item.Address </td>
                     <td> @item.Occupation </td>
-                    <td> @item.Insurance </td>
+
+                    <td> @(item.Insurance ? "Yes" : "No") </td>
                     <td> @item.Operation </td>
+
                     <td> @item.Marital </td>
                 </tr>
             }
