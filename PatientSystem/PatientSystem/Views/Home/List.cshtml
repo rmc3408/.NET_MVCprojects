@@ -16,8 +16,8 @@
                 <th> Age </th>
                 <th> Address </th>
                 <th> Occupation </th>
-                <th> HasInsurance? </th>
-                <th> IsOperated? </th>
+                <th> Has Insurance? </th>
+                <th> Is Operated? </th>
                 <th> Marital Status </th>
             </tr>
         </thead>
@@ -32,7 +32,7 @@
                     <td> @item.Occupation </td>
 
                     <td> @(item.Insurance ? "Yes" : "No") </td>
-                    <td> @item.Operation </td>
+                    <td> @(item.Operation ? "Yes" : "No") </td>
 
                     <td> @item.Marital </td>
                 </tr>
