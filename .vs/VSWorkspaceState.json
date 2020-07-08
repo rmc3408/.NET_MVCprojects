@@ -1,8 +1,7 @@
 {
   "ExpandedNodes": [
     "",
-    "\\PatientSystem",
-    "\\StudentSystem\\StudentSystem"
+    "\\PatientSystem"
   ],
   "SelectedNode": "\\PatientSystem\\PatientSystem.sln",
   "PreviewInSolutionExplorer": false
