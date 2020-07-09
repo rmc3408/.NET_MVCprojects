@@ -1,0 +1,47 @@
+﻿@model Patient
+
+@{
+    Layout = "_Layout";
+    ViewBag.Title = "Details";
+}
+
+    <div class="jumbotron">
+        <h3> Detail of the Patient</h3>
+        
+        <h1 class="modal-title"> @Model.Name< </h1>
+
+    </div>
+
+
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th> Name </th>
+                <th> Registered Date</th>
+                <th> Age </th>
+                <th> Address </th>
+                <th> Occupation </th>
+                <th> Has Insurance? </th>
+                <th> Is Operated? </th>
+                <th> Marital Status </th>
+            </tr>
+        </thead>
+        <tbody>
+            {
+                <tr>
+                    <td> @Model.Name </td>
+                    <td> @Model.CurrentDateAndTime </td>
+                    <td> @Model.Age </td>
+                    <td> @Model.Address </td>
+                    <td> @Model.Occupation </td>
+
+                    <td> @(Model.Insurance ? "Yes" : "No") </td>
+                    <td> @(Model.Operation ? "Yes" : "No") </td>
+
+                    <td> @Model.Marital </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
