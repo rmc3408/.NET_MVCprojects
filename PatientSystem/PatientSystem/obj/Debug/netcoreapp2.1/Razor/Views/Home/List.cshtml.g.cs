@@ -90,7 +90,7 @@ using PatientSystem.Models;
             WriteLiteral("            <tr>\r\n                <td>\r\n                    ");
             EndContext();
             BeginContext(864, 64, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6ddb05ad985048a5bb7844bd8c50d725", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7b37b530957e492f9a429592694f0f6f", async() => {
                 BeginContext(912, 1, true);
                 WriteLiteral(" ");
                 EndContext();

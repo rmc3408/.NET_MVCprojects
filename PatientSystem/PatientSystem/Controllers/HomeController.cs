@@ -17,7 +17,7 @@ namespace PatientSystem.Controllers
             {
                 ViewBag.Greeting = "Good Morning";
             } 
-            else if (regtime > 18)
+            else if (regtime > 17)
             {
                 ViewBag.Greeting = "Good Night";
             }
