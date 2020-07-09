@@ -2,6 +2,7 @@
 using PatientSystem.Models;
 using System;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace PatientSystem.Controllers
 {
@@ -10,8 +11,21 @@ namespace PatientSystem.Controllers
         [HttpGet]
         public ViewResult Index()
         {
+            
             int regtime = DateTime.Now.Hour;
-            ViewBag.Greeting = regtime >= 12 ? "Good Afternoon" : "Good Morning";
+            if (regtime < 12)
+            {
+                ViewBag.Greeting = "Good Morning";
+            } 
+            else if (regtime > 18)
+            {
+                ViewBag.Greeting = "Good Night";
+            }
+            else
+            {
+                ViewBag.Greeting = "Good Afternoon";
+            }
+                
             return View("Register");
         }
 
