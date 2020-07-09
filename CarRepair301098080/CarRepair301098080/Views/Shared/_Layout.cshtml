@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/myCssFile.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <img src="~/image/logo.jpg" /> <a class="navbar-brand"> Repair Car Registration System </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#codeToCollapse" aria-controls="codeToCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="codeToCollapse" style="margin-left:50px">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" asp-action="Index">Add new License Plate <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-action="List">Full List</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer class="footer fixed-bottom bg-dark">
+        <div class="container">
+            <span class="text-muted">Copyright by Raphael Molinaro - 301098080</span>
+        </div>
+    </footer>
+
+</body>
+</html>

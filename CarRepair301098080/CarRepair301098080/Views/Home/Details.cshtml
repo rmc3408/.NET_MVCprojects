@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Car>
+
+@{
+    Layout = "_Layout";
+    ViewBag.Title = "Details";
+}
+
+
+
+@foreach (Car item in Model)
+{
+    <div class="jumbotron text-center">
+        <h3> Detail of the Car</h3>
+        <h1 class="text-info"> Car's License Plate: @item.LicensePlate </h1>
+
+    </div>
+    <div class="card-body" style="margin-left:80px">
+        <p> License Plate: @item.LicensePlate </p>
+        <p> Registered time: @item.CurrentDateAndTime </p>
+        <p> License Plate: @item.Name </p>
+        <p> Address: @item.Address </p>
+        <p> Has 4 doors: @(item.Door ? "Yes" : "No") </p>
+        <p> Use Diesel : @(item.Gas ? "Yes" : "No") </p>
+        <p> Contains 4 Wheel-Driven: @(item.Wheel ? "Yes" : "No") </p>
+        <p> Model: @item.Model </p>
+        <p> Make:
+            @switch (item.Make)
+            {
+                case 1:
+                    @: Honda
+                    break;
+                case 2:
+                    @: Toyota
+                    break;
+                case 3:
+                    @: Volvo
+                    break;
+                case 4:
+                    @: Lexus
+                    break;
+                default:
+                    break;
+            }
+        </p>
+    </div>
+}

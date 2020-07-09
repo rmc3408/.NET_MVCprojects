@@ -1,0 +1,34 @@
+﻿@model IEnumerable<Car>
+
+@{
+    Layout = "_Layout";
+    ViewBag.Title = "List";
+}
+
+<h1 class="jumbotron text-center"> List of All Registered Cars</h1>
+
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th> Name </th>
+                <th> Model </th>
+                <th> Registered Date</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Car item in Model)
+            {
+
+                <tr>
+                    <td><a asp-action="Details" asp-route-id=@item.Name> @item.Name </a></td>
+                    <td> @item.Model </td>
+                    <td> @item.CurrentDateAndTime </td>
+                    
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>

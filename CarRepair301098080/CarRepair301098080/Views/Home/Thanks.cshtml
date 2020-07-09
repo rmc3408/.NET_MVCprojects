@@ -1,0 +1,44 @@
+﻿@model Car
+
+@{
+    Layout = "_Layout";
+    ViewBag.Title = "Thanks";
+}
+
+
+<div class="jumbotron text-center">
+    <h3> Thank you !</h3>
+    <h1 class="text-info"> @Model.Name </h1>
+
+</div>
+
+<p class="text-center">
+    <span class="blockquote">@Model.Model</span> belongs to the 
+    <span class="blockquote">@Model.Name</span> and it has been sucessfully registered 
+    as <span class="blockquote">
+    @switch (Model.Make)
+    {
+        case 1:
+            @: Honda
+            break;
+        case 2:
+            @: Toyota
+            break;
+        case 3:
+            @: Volvo
+            break;
+        case 4:
+            @: Lexus
+            break;
+        default:
+            break;
+    }
+
+
+
+</span> 
+    on <span class="blockquote">@Model.CurrentDateAndTime</span> !!
+    
+    
+    
+</p>

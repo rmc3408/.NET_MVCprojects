@@ -1,0 +1,106 @@
+﻿@model Car
+
+@{
+    Layout = "_Layout";
+    ViewBag.Title = "New Car Registration";
+}
+
+
+
+<form class="form-horizontal" asp-action="Thanks" method="Post">
+
+    <div class="jumbotron text-center">
+        <h3> @ViewBag.Greeting </h3>
+
+    </div>
+
+
+    <fieldset>
+
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label">License Plate: </label>
+            <div class="col-md-4">
+                <input asp-for="LicensePlate" type="text" placeholder="" class="form-control input-md">
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label">Name: </label>
+            <div class="col-md-4">
+                <input asp-for="Name" type="text" placeholder="" class="form-control input-md">
+
+            </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label">Address: </label>
+            <div class="col-md-4">
+                <input asp-for="Address" type="text" placeholder="" class="form-control input-md">
+
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" asp-for="Make"> Car Brand:</label>
+            <select asp-for="Make" class="col-md-6 control-label">
+                <option value="1">Honda</option>
+                <option value="2">Toyota</option>
+                <option value="3">Volvo</option>
+                <option value="4">Lexus</option>
+            </select>
+        </div>
+
+
+        <!-- Text input-->
+        <div class="form-group">
+            <label class="col-md-4 control-label" asp-for="Model">Model</label>
+            <div class="col-md-4">
+                <input asp-for="Model" type="text" placeholder="" class="form-control input-md">
+
+            </div>
+        </div>
+
+
+        <!-- Multiple Checkboxes (inline) -->
+        <div class="form-group">
+            <label class="col-md-4 control-label">Has 4 Doors?</label>
+            <div class="col-md-4">
+                <input asp-for="Door" value="true">
+
+
+            </div>
+        </div>
+
+        <!-- Multiple Checkboxes (inline) -->
+        <div class="form-group">
+            <label class="col-md-4 control-label">Use Diesel?</label>
+            <div class="col-md-4">
+                <input type="checkbox" asp-for="Gas" value="true">
+            </div>
+        </div>
+
+        <!-- Multiple Checkboxes (inline) -->
+        <div class="form-group">
+            <label class="col-md-4 control-label">Use Diesel?</label>
+            <div class="col-md-4">
+                <input type="checkbox" asp-for="Wheel" value="true">
+            </div>
+        </div>
+
+
+        <!-- Button (Double) -->
+        <div class="form-group" style="margin-bottom:40px">
+            <label class="col-md-4 control-label" for="submit"></label>
+            <div class="col-md-8">
+                <button id="submit" name="submit" class="btn btn-success">Register</button>
+
+            </div>
+        </div>
+
+    </fieldset>
+</form>
+
