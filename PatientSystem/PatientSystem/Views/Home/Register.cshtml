@@ -7,99 +7,94 @@
 
 
 
-<form class="form-horizontal" asp-action="Thanks" method="Post">
+    <form class="form-horizontal" asp-action="Thanks" method="Post">
 
+        <div class="jumbotron text-center">
+            <h3> @ViewBag.Greeting </h3>
 
-    <h1> @ViewBag.Greeting </h1>
-
-    <fieldset>
-
-        <!-- Form Name -->
-        <legend>
-            Register Time: @DateTime.Now;
-
-        </legend>
-
-
-
-
-        <!-- Text input-->
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="Name">Patient Name</label>
-            <div class="col-md-4">
-                <input id="Name" asp-for="Name" type="text" placeholder="" class="form-control input-md">
-
-            </div>
         </div>
+        
 
-        <!-- Text input-->
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="age">Age</label>
-            <div class="col-md-4">
-                <input id="age" asp-for="Age" type="text" placeholder="" class="form-control input-md">
+        <fieldset>
 
+            
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="Name">Patient Name</label>
+                <div class="col-md-4">
+                    <input id="Name" asp-for="Name" type="text" placeholder="" class="form-control input-md">
+
+                </div>
             </div>
-        </div>
 
-        <!-- Text input-->
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="ocupation">Occupation</label>
-            <div class="col-md-4">
-                <input id="ocupation" asp-for="Occupation" type="text" placeholder="" class="form-control input-md">
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="age">Age</label>
+                <div class="col-md-4">
+                    <input id="age" asp-for="Age" type="text" placeholder="" class="form-control input-md">
 
+                </div>
             </div>
-        </div>
 
-        <!-- Text input-->
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="address">Address</label>
-            <div class="col-md-4">
-                <input id="address" asp-for="Address" type="text" placeholder="" class="form-control input-md">
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="ocupation">Occupation</label>
+                <div class="col-md-4">
+                    <input id="ocupation" asp-for="Occupation" type="text" placeholder="" class="form-control input-md">
 
+                </div>
             </div>
-        </div>
 
-        <!-- Multiple Checkboxes (inline) -->
-        <div class="form-group">
-            <label class="col-md-4 control-label">Has insurance?</label>
-            <div class="col-md-4">
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="address">Address</label>
+                <div class="col-md-4">
+                    <input id="address" asp-for="Address" type="text" placeholder="" class="form-control input-md">
 
-                <input asp-for="Insurance" value="true">
-
-
+                </div>
             </div>
-        </div>
 
-        <!-- Multiple Checkboxes (inline) -->
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="operation">Had Operations Before?</label>
-            <div class="col-md-4">
-                <input type="checkbox" asp-for="Operation" value="true">
+            <!-- Multiple Checkboxes (inline) -->
+            <div class="form-group">
+                <label class="col-md-4 control-label">Has insurance?</label>
+                <div class="col-md-4">
+
+                    <input asp-for="Insurance" value="true">
+
+
+                </div>
             </div>
-        </div>
 
-        <!-- Select Basic -->
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="marital">Martial Status?</label>
-            <div class="col-md-4">
-                <select id="marital" asp-for="Marital" class="form-control">
-                    <option value="Single">Single</option>
-                    <option value="Married">Married</option>
-                    <option value="divorced">Divorced</option>
-                    <option value="Windowed">Widowed</option>
-                </select>
+            <!-- Multiple Checkboxes (inline) -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="operation">Had Operations Before?</label>
+                <div class="col-md-4">
+                    <input type="checkbox" asp-for="Operation" value="true">
+                </div>
             </div>
-        </div>
 
-        <!-- Button (Double) -->
-        <div class="form-group">
-            <label class="col-md-4 control-label" for="submit"></label>
-            <div class="col-md-8">
-                <button id="submit" name="submit" class="btn btn-success">Register</button>
-
+            <!-- Select Basic -->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="marital">Martial Status?</label>
+                <div class="col-md-4">
+                    <select id="marital" asp-for="Marital" class="form-control">
+                        <option value="Single">Single</option>
+                        <option value="Married">Married</option>
+                        <option value="divorced">Divorced</option>
+                        <option value="Windowed">Widowed</option>
+                    </select>
+                </div>
             </div>
-        </div>
 
-    </fieldset>
-</form>
+            <!-- Button (Double) -->
+            <div class="form-group" style="margin-bottom:40px">
+                <label class="col-md-4 control-label" for="submit"></label>
+                <div class="col-md-8">
+                    <button id="submit" name="submit" class="btn btn-success">Register</button>
+
+                </div>
+            </div>
+
+        </fieldset>
+    </form>
 

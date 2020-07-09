@@ -5,8 +5,14 @@
     ViewBag.Title = "Thanks";
 }
 
-<h1> THANK YOU! </h1>
-<p>
+
+    <div class="jumbotron text-center">
+        <h3> Thank you !</h3>
+        <h1 class="text-info"> @Model.Name </h1>
+
+    </div>
+
+<p class="text-center">
     The Patient name: <span class="blockquote">@Model.Name</span> has been successfully
     registered as <span class="blockquote">@Model.Occupation</span>
     on <span class="blockquote">@Model.CurrentDateAndTime</span> !!

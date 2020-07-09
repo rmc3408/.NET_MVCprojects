@@ -1,47 +1,27 @@
-﻿@model Patient
+﻿@model IEnumerable<Patient>
 
 @{
     Layout = "_Layout";
     ViewBag.Title = "Details";
 }
 
-    <div class="jumbotron">
+
+
+@foreach (Patient item in Model)
+{
+    <div class="jumbotron text-center">
         <h3> Detail of the Patient</h3>
-        
-        <h1 class="modal-title"> @Model.Name< </h1>
+        <h1 class="text-info"> @item.Name </h1>
 
     </div>
-
-
-<div class="table-responsive">
-    <table class="table">
-        <thead>
-            <tr>
-                <th> Name </th>
-                <th> Registered Date</th>
-                <th> Age </th>
-                <th> Address </th>
-                <th> Occupation </th>
-                <th> Has Insurance? </th>
-                <th> Is Operated? </th>
-                <th> Marital Status </th>
-            </tr>
-        </thead>
-        <tbody>
-            {
-                <tr>
-                    <td> @Model.Name </td>
-                    <td> @Model.CurrentDateAndTime </td>
-                    <td> @Model.Age </td>
-                    <td> @Model.Address </td>
-                    <td> @Model.Occupation </td>
-
-                    <td> @(Model.Insurance ? "Yes" : "No") </td>
-                    <td> @(Model.Operation ? "Yes" : "No") </td>
-
-                    <td> @Model.Marital </td>
-                </tr>
-            }
-        </tbody>
-    </table>
-</div>
+    <div class="card-body" style="margin-left:80px">
+        <p> Name: @item.Name </p>
+        <p> Registered time: @item.CurrentDateAndTime </p>
+        <p> Age: @item.Age </p>
+        <p> Address: @item.Address </p>
+        <p> Occupation: @item.Occupation </p>
+        <p> Has insurance: @(item.Insurance ? "Yes" : "No") </p>
+        <p> Operated Before: @(item.Operation ? "Yes" : "No") </p>
+        <p> Marital Status: @item.Marital </p>
+    </div>
+}

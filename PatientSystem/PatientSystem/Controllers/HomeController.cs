@@ -30,6 +30,11 @@ namespace PatientSystem.Controllers
             return View(Repo.Sicks.OrderBy(s => s.Name));
         }
 
+        public ViewResult Details(string id)
+        {
+           return View(Repo.Sicks.Where(s => s.Name == id));
+        }
+
 
     }
 }

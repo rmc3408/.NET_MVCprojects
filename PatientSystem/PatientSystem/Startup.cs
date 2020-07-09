@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc.Internal;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace PatientSystem
@@ -19,10 +20,11 @@ namespace PatientSystem
             app.UseDeveloperExceptionPage();
             app.UseStaticFiles();
             app.UseStatusCodePages();
+            
             app.UseMvcWithDefaultRoute();
 
-
             
+
         }
     }
 }
