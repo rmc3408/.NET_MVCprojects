@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\molin\\Desktop\\CarRepair301098080\\CarRepair301098080\\CarRepair301098080.csproj": {}
+    "C:\\Users\\molin\\Documents\\WebApplic\\Projects\\CarRepair301098080\\CarRepair301098080\\CarRepair301098080.csproj": {}
   },
   "projects": {
-    "C:\\Users\\molin\\Desktop\\CarRepair301098080\\CarRepair301098080\\CarRepair301098080.csproj": {
+    "C:\\Users\\molin\\Documents\\WebApplic\\Projects\\CarRepair301098080\\CarRepair301098080\\CarRepair301098080.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\molin\\Desktop\\CarRepair301098080\\CarRepair301098080\\CarRepair301098080.csproj",
+        "projectUniqueName": "C:\\Users\\molin\\Documents\\WebApplic\\Projects\\CarRepair301098080\\CarRepair301098080\\CarRepair301098080.csproj",
         "projectName": "CarRepair301098080",
-        "projectPath": "C:\\Users\\molin\\Desktop\\CarRepair301098080\\CarRepair301098080\\CarRepair301098080.csproj",
+        "projectPath": "C:\\Users\\molin\\Documents\\WebApplic\\Projects\\CarRepair301098080\\CarRepair301098080\\CarRepair301098080.csproj",
         "packagesPath": "C:\\Users\\molin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\molin\\Desktop\\CarRepair301098080\\CarRepair301098080\\obj\\",
+        "outputPath": "C:\\Users\\molin\\Documents\\WebApplic\\Projects\\CarRepair301098080\\CarRepair301098080\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
