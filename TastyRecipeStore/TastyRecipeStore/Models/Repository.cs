@@ -9,10 +9,12 @@ namespace TastyRecipeStore.Models
     {
         private static List<Recipe> packOfRecipe = new List<Recipe>();
 
-        public static IEnumerable<Recipe> PackOfRecipe
+        public static IQueryable<Recipe> PackOfRecipe
         {
-            get { return packOfRecipe; } 
+            get { return packOfRecipe.AsQueryable<Recipe>(); }
+
         }
+
         public static void AddToList(Recipe r)
         {
             packOfRecipe.Add(r);

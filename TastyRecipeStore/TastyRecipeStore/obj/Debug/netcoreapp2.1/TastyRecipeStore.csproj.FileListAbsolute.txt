@@ -30,3 +30,4 @@ C:\Users\molin\Documents\WebApplic\Projects\TastyRecipeStore\TastyRecipeStore\ob
 C:\Users\molin\Documents\WebApplic\Projects\TastyRecipeStore\TastyRecipeStore\obj\Debug\netcoreapp2.1\Razor\Views\Home\ViewRecipe.cshtml.g.cs
 C:\Users\molin\Documents\WebApplic\Projects\TastyRecipeStore\TastyRecipeStore\obj\Debug\netcoreapp2.1\Razor\Views\Home\Review.cshtml.g.cs
 C:\Users\molin\Documents\WebApplic\Projects\TastyRecipeStore\TastyRecipeStore\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\molin\Documents\WebApplic\Projects\TastyRecipeStore\TastyRecipeStore\obj\Debug\netcoreapp2.1\Razor\Views\Shared\RecipeSummary.cshtml.g.cs

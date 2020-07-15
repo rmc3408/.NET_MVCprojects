@@ -7,7 +7,7 @@ namespace TastyRecipeStore.Models
 {
     public class Recipe
     {
-        
+        public int RecipeID { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
         public string Chef { get; set; }
