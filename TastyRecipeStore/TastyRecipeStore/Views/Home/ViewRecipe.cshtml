@@ -1,54 +1,32 @@
-﻿@model IEnumerable<Recipe>
+﻿@model Recipe
 @{
     Layout = "_Layout";
     ViewBag.Title = "View Selected Recipe";
 }
 
-<div class="container">
-    <div class="row">
-        <div class="col-md-8">
-            <div class="blog-content">
-                <h2>Chicken Cesar Salad</h2>
 
-                <h4>Chef's Author</h4>
-                <p> Raphael Molinaro</p>
-                <h4>Chef's Description</h4>
-                <p>A Caesar salad is a green salad of romaine lettuce and croutons dressed with lemon juice, olive oil, egg, Worcestershire sauce, anchovies, garlic, Dijon mustard, Parmesan cheese, and black pepper. In its original form, this salad was prepared and served tableside.</p>
+<h2 class="jumbotron justify-content-md-center lbl-primary">@Model.Name recipe's detail</h2>
+<br />
+<div class="container ">
+    <div class="card">
+        <div class="container-fliud">
+            <div class="details col-md-6">
 
-                <h4>Preparation Time</h4>
-                <p>15 minutes</p>
 
-                <h4>Ingredients</h4>
-                <ul>
-                    <li>1 pound (454 grams) cooked chicken breast or rotisserie chicken, shredded (about 4 cups shredded)</li>
-                    <li>1/2 cup diced red onion (about 1/2 medium red onion or 60 grams)</li>
-                    <li>1/2 cup diced apple (about 1/2 small apple or 75 grams)</li>
-                    <li>2/3 cup (100 grams) quartered or halved grapes</li>
-                    <li>2/3 cup (165 grams) plain 2% fat Greek yogurt (certified gluten-free if necessary)</li>
-                    <li>2 tablespoon freshly squeezed lemon juice, or more, to taste</li>
-                    <li>1/2 teaspoon garlic powder</li>
-                    <li>Salt and pepper, to taste</li>
-                </ul>
+                <label class="lbl lbl-primary lbl-block"><span>Chef's Author</span></label>
+                <p> @Model.Chef</p>
+
+                <label class="lbl lbl-primary lbl-block"><span>Description</span></label>
+                <p>@Model.Description</p>
+
+                <label class="lbl lbl-primary lbl-block"><span>Preparation Time</span></label>
+                <p>@Model.PreparationTime min</p>
+
+                <label class="lbl lbl-primary lbl-block"><span>Ingredients</span></label>
+                <p>@Model.Ingredient</p>
+
+
             </div>
         </div>
     </div>
 </div>
-
-@*<div>
-        <div>
-            @foreach (var item in Model)
-            {
-                <div>
-                    <h6>@Html.DisplayFor(modelItem => item.Name)d</h6>
-                    <p> Chef: </p>
-                    <p> @Html.DisplayFor(modelItem => item.Chef) </p>
-                    <p> Preparation Time: </p>
-                    <p> @Html.DisplayFor(modelItem => item.PreparationTime) </p>
-                    <p> Ingredient </p>
-                    <p> @Html.DisplayFor(modelItem => item.Ingredient) </p>
-                    <p> Description </p>
-                    <p> @Html.DisplayFor(modelItem => item.Description)</p>
-                </div>
-            }
-        </div>
-</div>*@

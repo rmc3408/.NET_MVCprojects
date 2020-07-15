@@ -6,31 +6,12 @@
 }
 
     <div class="row">
-        <div class="col-sm-6">
-            <div class="card">
-                <div class="card-body">
-                    <h2><a class="card-link" asp-action="ViewRecipe">Chicken Caesar Salad</a></h2>
-                    <p>A salad is a green salad of romaine lettuce, chicken and croutons dressed with lemon juice, olive oil, egg, Worcestershire sauce, anchovies, garlic, Dijon mustard, Parmesan cheese, and black pepper. In its original form, this salad was prepared and served tableside.</p>
-                    <p><a class="btn btn-default" asp-action="ViewRecipe" role="button">View details »</a></p>
-                    <p><a class="btn btn-default" asp-action="Review" role="button">Write a Review »</a></p>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-6">
-            <div class="card">
-                <div class="card-body">
-                    <h2><a class="card-link" asp-action="ViewRecipe">Extra Cheese Burger</a></h2>
-                    <p>A cheeseburger is a hamburger topped with cheese. Traditionally, the slice of cheese is placed on top of the meat patty, but the burger can include variations in structure, ingredients and composition. The cheese is usually added to the cooking hamburger patty shortly before serving.</p>
-                    <p><a class="btn btn-default" asp-action="ViewRecipe" role="button">View details »</a></p>
-                    <p><a class="btn btn-default" asp-action="Review" role="button">Write a Review »</a></p>
-                </div>
-            </div>
-        </div>
+        
 
         @foreach (var data in Model)
         {
 
-            @await Html.PartialAsync("RecipeSummary", data)
+            @await Html.PartialAsync("RecipeList", data)
 
         }
     </div>

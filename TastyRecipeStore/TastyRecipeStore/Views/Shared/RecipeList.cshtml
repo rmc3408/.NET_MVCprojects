@@ -4,9 +4,9 @@
     <div class="col-sm-6">
         <div class="card">
             <div class="card-body">
-                <h2><a class="card-link" asp-action="ViewRecipe">@Model.Name</a></h2>
+                <h2>@Model.Name</h2>
                 <p>@Model.Description</p>
-                <p><a class="btn btn-default" asp-action="ViewRecipe" role="button">View details »</a></p>
+                <p><a class="btn btn-default" asp-action="ViewRecipe" asp-route-id=@Model.Name>View details »</a></p>
                 <p><a class="btn btn-default" asp-action="Review" role="button">Write a Review »</a></p>
             </div>
         </div>

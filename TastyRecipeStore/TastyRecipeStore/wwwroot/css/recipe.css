@@ -52,3 +52,34 @@ input > * {
     width: 60%;
 
 }
+
+body {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.lbl {
+    padding: .5rem 1rem;
+    border-radius: .2rem;
+    cursor: pointer;
+    transition: all .3s;
+    transition-timing-function: ease-in-out;
+}
+
+
+
+.lbl-primary {
+    background-color: rgba(93,120,255,.1);
+    color: #5d78ff;
+}
+
+    .lbl-primary:hover {
+        background-color: #5d78ff;
+        color: #000;
+    }
+
+
+.lbl-block {
+    display: block;
+}

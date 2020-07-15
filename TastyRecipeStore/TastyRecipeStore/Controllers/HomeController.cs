@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Linq;
 using TastyRecipeStore.Models;
 
 namespace TastyRecipeStore.Controllers
@@ -31,9 +32,9 @@ namespace TastyRecipeStore.Controllers
             return View(Repository.PackOfRecipe);
         }
 
-        public ViewResult ViewRecipe()
+        public ViewResult ViewRecipe(string id)
         {
-            return View(Repository.PackOfRecipe);
+            return View(Repository.PackOfRecipe.FirstOrDefault(p => p.Name == id));
         }
 
         public ViewResult Review()
