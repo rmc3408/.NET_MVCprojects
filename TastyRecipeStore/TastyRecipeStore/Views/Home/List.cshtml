@@ -11,7 +11,16 @@
         @foreach (var data in Model)
         {
 
-            @await Html.PartialAsync("RecipeList", data)
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <h2>@data.Name</h2>
+                    <p>@data.Description</p>
+                    <p><a class="btn btn-outline-info" asp-action="ViewRecipe" asp-route-id=@data.RecipeID>View details »</a></p>
+                    <p><a class="btn btn-outline-primary" asp-action="Review" role="button">Write a Review »</a></p>
+                </div>
+            </div>
+        </div>
 
         }
     </div>

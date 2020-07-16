@@ -21,6 +21,9 @@ namespace TastyRecipeStore.Controllers
         [HttpPost]
         public ViewResult Form(Recipe recipeFromForm)
         {
+            //Add number of the recipe as you save it.
+            recipeFromForm.RecipeID = Repository.PackOfRecipe.Count() + 1; 
+
             //Add Object from FORM to the List<recipe>
             Repository.AddToList(recipeFromForm);
 
@@ -32,9 +35,10 @@ namespace TastyRecipeStore.Controllers
             return View(Repository.PackOfRecipe);
         }
 
-        public ViewResult ViewRecipe(string id)
+        public ViewResult ViewRecipe(int id)
         {
-            return View(Repository.PackOfRecipe.FirstOrDefault(p => p.Name == id));
+            //Search for first results in the repository
+            return View(Repository.PackOfRecipe.FirstOrDefault(p => p.RecipeID == id));
         }
 
         public ViewResult Review()
