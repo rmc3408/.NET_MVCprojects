@@ -93,7 +93,7 @@ using TastyRecipeStore.Models;
             WriteLiteral("</p>\r\n                    <p>");
             EndContext();
             BeginContext(409, 102, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "452b6995fb36498d9a1da2ff59242f61", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ffe89de12df44f42a69858fbe69804a6", async() => {
                 BeginContext(493, 14, true);
                 WriteLiteral("View details »");
                 EndContext();
@@ -129,7 +129,7 @@ using TastyRecipeStore.Models;
             WriteLiteral("</p>\r\n                    <p>");
             EndContext();
             BeginContext(540, 89, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5536205ffeca4c218f46cf59e69a44c5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "05e6a971991d4cbd8873dacd5b5c6920", async() => {
                 BeginContext(609, 16, true);
                 WriteLiteral("Write a Review »");
                 EndContext();
