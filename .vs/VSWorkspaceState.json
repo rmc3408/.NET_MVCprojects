@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\TastyRecipeStore",
+    "\\TastyRecipeStore\\TastyRecipeStore"
   ],
-  "SelectedNode": "\\TastyRecipeStore",
+  "SelectedNode": "\\TastyRecipeStore\\TastyRecipeStore.sln",
   "PreviewInSolutionExplorer": false
 }
