@@ -32,7 +32,7 @@ namespace SportStore
             // services.AddTransient<IProductRepository, FakeProductsRep>();
             
             
-            //
+            // connect our local Database using configuration to external SQL server
             services.AddDbContext<DataB>(options => options.UseSqlServer(Configuration["Data:SportStoreProducts:ConnectionString"]));
             services.AddMvc();
         }
