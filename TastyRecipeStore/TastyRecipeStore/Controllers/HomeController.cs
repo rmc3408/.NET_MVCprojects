@@ -6,7 +6,16 @@ namespace TastyRecipeStore.Controllers
 {
     public class HomeController : Controller
     {
-        
+        public IRecipeRepository repository;
+
+        public HomeController(IRecipeRepository theRecipe)
+        {
+            repository = theRecipe;
+        }
+
+         
+
+
         public ViewResult Index()
         {
             return View();
@@ -23,10 +32,7 @@ namespace TastyRecipeStore.Controllers
         public ViewResult Form(Recipe recipeFromForm)
         {
             //Add number of the recipe as you save it.
-            recipeFromForm.RecipeID = Repository.PackOfRecipe.Count() + 1; 
-
-            //Add Object from FORM to the List<recipe>
-            Repository.AddToList(recipeFromForm);
+            recipeFromForm.RecipeID = repository.FoodRepository.Count() + 1; 
 
             return View("Index");
         }
