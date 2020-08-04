@@ -66,3 +66,4 @@ C:\Users\molin\OneDrive\Documents\MVC\TastyRecipeStore\TastyRecipeStore\obj\Debu
 C:\Users\molin\OneDrive\Documents\MVC\TastyRecipeStore\TastyRecipeStore\obj\Debug\netcoreapp2.1\TastyRecipeStore.csproj.CopyComplete
 C:\Users\molin\OneDrive\Documents\MVC\TastyRecipeStore\TastyRecipeStore\bin\Debug\netcoreapp2.1\appsettings.json
 C:\Users\molin\OneDrive\Documents\MVC\TastyRecipeStore\TastyRecipeStore\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\molin\OneDrive\Documents\MVC\TastyRecipeStore\TastyRecipeStore\bin\Debug\netcoreapp2.1\appsettings.production.json

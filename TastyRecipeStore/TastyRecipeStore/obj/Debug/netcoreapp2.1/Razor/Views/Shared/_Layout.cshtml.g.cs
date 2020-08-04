@@ -61,7 +61,7 @@ using TastyRecipeStore.Models;
             WriteLiteral("<!DOCTYPE html>\r\n\r\n<html>\r\n");
             EndContext();
             BeginContext(27, 327, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2dfb9fc2ce2e45d3815fc04cf8464e1f", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b0724bbd74bc45608956160dcf11bed9", async() => {
                 BeginContext(33, 72, true);
                 WriteLiteral("\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>");
                 EndContext();
@@ -76,7 +76,7 @@ using TastyRecipeStore.Models;
                 WriteLiteral("</title>\r\n    ");
                 EndContext();
                 BeginContext(133, 60, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "cc38b2aba9ca491bb1ea19def7f3c611", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "73760aa06ff64844ac735b8b47fd60e8", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -95,7 +95,7 @@ using TastyRecipeStore.Models;
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(199, 49, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "ef12e7015d534cd3bd2dd08161fbde7d", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "15cd697524b74dcaa22040731de6416e", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -129,12 +129,12 @@ using TastyRecipeStore.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(356, 1041, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "898270737d0f4b40b36dab653278b3e2", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "97ad06b87fce43cda2233bb419f8e33b", async() => {
                 BeginContext(362, 174, true);
                 WriteLiteral("\r\n\r\n    <div class=\"jumbotron jum\">\r\n        <div class=\"container justify-content-lg-center\" style=\"align-content:center\">\r\n            <div class=\"img-t\">\r\n                ");
                 EndContext();
                 BeginContext(536, 29, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "f8c937a82287474ca3b02604589d5f70", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "3829131a6879483ca55b8869bdbe2c2e", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -162,7 +162,7 @@ using TastyRecipeStore.Models;
                 WriteLiteral("</h1>\r\n            <p>This is a template for a simple marketing or informational website. </p>\r\n            <p class=\"d-inline\">");
                 EndContext();
                 BeginContext(760, 99, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fbfb7952a611448f99c6d931b9211407", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "79f1888c8fd845feb62cca041d3f17b1", async() => {
                     BeginContext(844, 11, true);
                     WriteLiteral("Home Page »");
                     EndContext();
@@ -186,7 +186,7 @@ using TastyRecipeStore.Models;
                 WriteLiteral("</p>\r\n            <p class=\"d-inline\">");
                 EndContext();
                 BeginContext(897, 104, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "69a4bfe8acb04c28b5c37e472c38ecf9", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1e174288f846405e9757891605ee18c4", async() => {
                     BeginContext(980, 17, true);
                     WriteLiteral("List of Recipes »");
                     EndContext();
@@ -210,7 +210,7 @@ using TastyRecipeStore.Models;
                 WriteLiteral("</p>\r\n            <p class=\"d-inline\">");
                 EndContext();
                 BeginContext(1039, 103, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6ad0df40912040819f28c2e20c766a0c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d00d2ebc56aa406b9e2955e6b9f8bde7", async() => {
                     BeginContext(1122, 16, true);
                     WriteLiteral("Add New Recipe »");
                     EndContext();
@@ -244,7 +244,7 @@ using TastyRecipeStore.Models;
                 WriteLiteral("\r\n    </div>\r\n\r\n    <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js\"></script>\r\n    ");
                 EndContext();
                 BeginContext(1343, 45, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "eba6cef97aaf41b190643ac7d0eb2ba2", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "54513bca0a0049a8991014c5e05564d6", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
