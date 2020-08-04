@@ -19,22 +19,23 @@
     height: 100px;
 }
 
-.d-inline{
-    display:inline;
+.d-inline {
+    display: inline;
     padding: 12px 20px 12px 0;
-} 
+}
 
 label {
     display: inline-block;
     width: 140px;
     text-align: left;
 }
+
 hr {
-    border-top:none;
+    border-top: none;
     border-bottom: 10px dotted dodgerblue;
     height: 12px;
     margin-top: 10px;
-    margin-bottom:40px;
+    margin-bottom: 40px;
     margin-left: 10px;
     width: 200px;
 }
@@ -43,12 +44,59 @@ input {
     display: inline-block;
     width: 60%;
 }
+
 .btn-review {
-    margin-top:20px;
+    margin-top: 20px;
 }
 
 input > * {
     display: inline-block;
     width: 60%;
+}
 
+body {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.lbl {
+    padding: .5rem 1rem;
+    border-radius: .2rem;
+    cursor: pointer;
+    transition: all .3s;
+    transition-timing-function: ease-in-out;
+}
+
+.title-primary {
+    background-color: rgba(93,120,255,.1);
+    color: #5d78ff;
+}
+
+
+
+.lbl-primary {
+    background-color: rgba(93,120,255,.1);
+    color: #5d78ff;
+    width: 100%;
+}
+
+
+
+.lbl-block {
+    display: block;
+    padding-left: 20px;
+}
+
+.mycard {
+    margin-bottom: 50px;
+}
+
+.details > p {
+    margin-left: 30px;
+}
+
+.card-size {
+    height: 300px;
+    margin-bottom: 20px;
 }
