@@ -22,9 +22,11 @@ namespace TastyRecipeStore
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
-            services.AddDbContext<AppDatabase>(option => option.UseSqlServer(Configuration["Data:TastyRecipeStore:ConnectionStrings"]));
             services.AddTransient<IRecipeRepository, EFRecipeRepository>();
+            services.AddMvc();
+            
+            services.AddDbContext<AppDatabase>(options => options.UseSqlServer(Configuration["Data:TastyRecipeStore:ConnectionStrings"]));
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -40,10 +42,12 @@ namespace TastyRecipeStore
                 routes => 
                     {
                         routes.MapRoute(
-                            name: "default",
-                            template: "{controller=Recipe}/{action=List}/{id?}"); 
+                            name: "startPage",
+                            template: "{controller=Home}/{action=List}/{id?}");
+
                     }
                 );
+            SeedData.AddSeeds(app);
             
         }
     }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TastyRecipeStore.Models;
 
 namespace TastyRecipeStore.Models
 {
@@ -9,13 +10,14 @@ namespace TastyRecipeStore.Models
     {
         private AppDatabase context;
 
-        public IQueryable<Recipe> FoodRepository => context.PackofRecipes;
-
+       
         public EFRecipeRepository(AppDatabase ctx)
         {
             context = ctx;
         }
 
+        public IQueryable<Recipe> FoodRepository { get { return context.PackofRecipes; } }
+           
 
     }
 }

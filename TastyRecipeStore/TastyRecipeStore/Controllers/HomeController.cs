@@ -13,7 +13,10 @@ namespace TastyRecipeStore.Controllers
             repository = theRecipe;
         }
 
-         
+        public ViewResult List()
+        {
+            return View(repository.FoodRepository);
+        }
 
 
         public ViewResult Index()
@@ -32,20 +35,15 @@ namespace TastyRecipeStore.Controllers
         public ViewResult Form(Recipe recipeFromForm)
         {
             //Add number of the recipe as you save it.
-            recipeFromForm.RecipeID = repository.FoodRepository.Count() + 1; 
+            recipeFromForm.RecipeID = repository.FoodRepository.Count() + 1;
 
             return View("Index");
-        }
-
-        public ViewResult List()
-        {
-            return View(Repository.PackOfRecipe);
         }
 
         public ViewResult ViewRecipe(int id)
         {
             //Search for first results in the repository
-            return View(Repository.PackOfRecipe.FirstOrDefault(p => p.RecipeID == id));
+            return View(repository.FoodRepository.FirstOrDefault(p => p.RecipeID == id));
         }
 
         public ViewResult Review()

@@ -7,6 +7,6 @@ namespace TastyRecipeStore.Models
 {
     public interface IRecipeRepository
     {
-        IQueryable<Recipe> FoodRepository { get; set; }
+        IQueryable<Recipe> FoodRepository { get; }
     }
 }
