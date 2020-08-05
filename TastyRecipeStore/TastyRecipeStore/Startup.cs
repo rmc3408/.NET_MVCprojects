@@ -43,7 +43,7 @@ namespace TastyRecipeStore
                     {
                         routes.MapRoute(
                             name: "startPage",
-                            template: "{controller=Home}/{action=List}/{id?}");
+                            template: "{controller=Recipe}/{action=Index}/{id?}");
 
                     }
                 );

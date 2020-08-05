@@ -65,7 +65,7 @@ using TastyRecipeStore.Models;
             WriteLiteral("\r\n    ");
             EndContext();
             BeginContext(75, 480, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "244f6c1a41aa46a6ad0cb0a3eb44bba9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f21fc892a46842868bc89f1e72cd97dd", async() => {
                 BeginContext(137, 14, true);
                 WriteLiteral("\r\n\r\n\r\n        ");
                 EndContext();
@@ -80,7 +80,7 @@ using TastyRecipeStore.Models;
                 WriteLiteral("\r\n\r\n        <div class=\"form-group\">\r\n            <label class=\"col-md-4 control-label\" for=\"singlebutton\"></label>\r\n            \r\n                <button type=\"submit\" class=\"btn btn-primary\">SAVE</button>\r\n                      \r\n                ");
                 EndContext();
                 BeginContext(444, 66, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "25ae31ed6c7141f8b5aa3e88dc88fe57", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b84df63adcbb487691be9dee1a5e980b", async() => {
                     BeginContext(495, 6, true);
                     WriteLiteral("CANCEL");
                     EndContext();

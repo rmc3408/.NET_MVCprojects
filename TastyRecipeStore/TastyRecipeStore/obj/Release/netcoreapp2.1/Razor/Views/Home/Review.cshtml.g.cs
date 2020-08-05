@@ -59,7 +59,7 @@ using TastyRecipeStore.Models;
             WriteLiteral("\r\n<div class=\"container\">\r\n    <div class=\"row\" style=\"margin-top:40px;\">\r\n        <div class=\"col-md-6\">\r\n            ");
             EndContext();
             BeginContext(163, 789, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9f46b505f60c40738c3464e9b43c4d9d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "af4d5bb71f9e4866a9b8ca199f801976", async() => {
                 BeginContext(216, 729, true);
                 WriteLiteral(@"
                 <input id=""ratings-hidden"" name=""rating"" type=""hidden"">

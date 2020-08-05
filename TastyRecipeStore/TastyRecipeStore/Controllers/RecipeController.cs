@@ -4,11 +4,11 @@ using TastyRecipeStore.Models;
 
 namespace TastyRecipeStore.Controllers
 {
-    public class HomeController : Controller
+    public class RecipeController : Controller
     {
         public IRecipeRepository repository;
 
-        public HomeController(IRecipeRepository theRecipe)
+        public RecipeController(IRecipeRepository theRecipe)
         {
             repository = theRecipe;
         }

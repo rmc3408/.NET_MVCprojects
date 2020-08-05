@@ -49,11 +49,6 @@ C:\Users\molin\OneDrive\Documents\MVC\TastyRecipeStore\TastyRecipeStore\obj\Debu
 C:\Users\molin\OneDrive\Documents\MVC\TastyRecipeStore\TastyRecipeStore\obj\Debug\netcoreapp2.1\TastyRecipeStore.TagHelpers.input.cache
 C:\Users\molin\OneDrive\Documents\MVC\TastyRecipeStore\TastyRecipeStore\obj\Debug\netcoreapp2.1\TastyRecipeStore.TagHelpers.output.cache
 C:\Users\molin\OneDrive\Documents\MVC\TastyRecipeStore\TastyRecipeStore\obj\Debug\netcoreapp2.1\TastyRecipeStore.RazorCoreGenerate.cache
-C:\Users\molin\OneDrive\Documents\MVC\TastyRecipeStore\TastyRecipeStore\obj\Debug\netcoreapp2.1\Razor\Views\Home\Form.cshtml.g.cs
-C:\Users\molin\OneDrive\Documents\MVC\TastyRecipeStore\TastyRecipeStore\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\molin\OneDrive\Documents\MVC\TastyRecipeStore\TastyRecipeStore\obj\Debug\netcoreapp2.1\Razor\Views\Home\List.cshtml.g.cs
-C:\Users\molin\OneDrive\Documents\MVC\TastyRecipeStore\TastyRecipeStore\obj\Debug\netcoreapp2.1\Razor\Views\Home\Review.cshtml.g.cs
-C:\Users\molin\OneDrive\Documents\MVC\TastyRecipeStore\TastyRecipeStore\obj\Debug\netcoreapp2.1\Razor\Views\Home\ViewRecipe.cshtml.g.cs
 C:\Users\molin\OneDrive\Documents\MVC\TastyRecipeStore\TastyRecipeStore\obj\Debug\netcoreapp2.1\Razor\Views\Shared\RecipeForm.cshtml.g.cs
 C:\Users\molin\OneDrive\Documents\MVC\TastyRecipeStore\TastyRecipeStore\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\molin\OneDrive\Documents\MVC\TastyRecipeStore\TastyRecipeStore\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
@@ -67,3 +62,8 @@ C:\Users\molin\OneDrive\Documents\MVC\TastyRecipeStore\TastyRecipeStore\obj\Debu
 C:\Users\molin\OneDrive\Documents\MVC\TastyRecipeStore\TastyRecipeStore\bin\Debug\netcoreapp2.1\appsettings.json
 C:\Users\molin\OneDrive\Documents\MVC\TastyRecipeStore\TastyRecipeStore\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
 C:\Users\molin\OneDrive\Documents\MVC\TastyRecipeStore\TastyRecipeStore\bin\Debug\netcoreapp2.1\appsettings.production.json
+C:\Users\molin\OneDrive\Documents\MVC\TastyRecipeStore\TastyRecipeStore\obj\Debug\netcoreapp2.1\Razor\Views\Recipe\Form.cshtml.g.cs
+C:\Users\molin\OneDrive\Documents\MVC\TastyRecipeStore\TastyRecipeStore\obj\Debug\netcoreapp2.1\Razor\Views\Recipe\Index.cshtml.g.cs
+C:\Users\molin\OneDrive\Documents\MVC\TastyRecipeStore\TastyRecipeStore\obj\Debug\netcoreapp2.1\Razor\Views\Recipe\List.cshtml.g.cs
+C:\Users\molin\OneDrive\Documents\MVC\TastyRecipeStore\TastyRecipeStore\obj\Debug\netcoreapp2.1\Razor\Views\Recipe\Review.cshtml.g.cs
+C:\Users\molin\OneDrive\Documents\MVC\TastyRecipeStore\TastyRecipeStore\obj\Debug\netcoreapp2.1\Razor\Views\Recipe\ViewRecipe.cshtml.g.cs
