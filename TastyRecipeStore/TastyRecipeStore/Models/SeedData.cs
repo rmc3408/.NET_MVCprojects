@@ -22,7 +22,7 @@ namespace TastyRecipeStore.Models
                 tempDatabase.PackofRecipes.AddRange(
                     new Recipe()
                     {
-                        Chef = "Raphael Molinaro",
+                        Chef = "StevenDion",
                         Name = "Chicken Cesar Salad",
                         Description = "A Caesar salad is a green salad of romaine lettuce and croutons dressed with lemon juice," +
                         " olive oil, egg, Worcestershire sauce, anchovies, garlic, Dijon mustard, Parmesan cheese, and black pepper." +

@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/lib/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/recipe.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Damion&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="jumbotron jum">
+        <div class="container justify-content-lg-center" style="align-content:center">
+            <div class="img-t">
+                <img src="~/images/chef.png">
+            </div>
+            <h1 id="titlefont">@ViewBag.Title</h1>
+            <p>This is a template for a simple marketing or informational website. </p>
+            <p class="d-inline"><a class="btn btn-primary btn-lg btn-inline-block" asp-action="Index" role="button">Home Page »</a></p>
+            <p class="d-inline"><a class="btn btn-primary btn-lg btn-inline-block" asp-action="List" role="button">List of Recipes »</a></p>
+            <p class="d-inline"><a class="btn btn-primary btn-lg btn-inline-block" asp-action="Form" role="button">Add New Recipe »</a></p>
+        </div>
+    </div>
+
+    <div class="container">
+        @if (TempData["message"] != null)
+        {
+        <div class="alert alert-success mt-md-1">@TempData["message"]</div>
+        
+        }
+
+        @if(TempData["byeMsg"] != null)
+        {
+        
+        <div class="alert alert-warning mt-md-1">@TempData["byeMsg"]</div>
+        }
+
+        @RenderBody()
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+</body>
+</html>

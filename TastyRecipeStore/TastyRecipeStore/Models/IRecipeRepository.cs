@@ -8,5 +8,7 @@ namespace TastyRecipeStore.Models
     public interface IRecipeRepository
     {
         IQueryable<Recipe> FoodRepository { get; }
+        void updateRecipe(Recipe r);
+        Recipe removeRecipe(int RecipeID);
     }
 }

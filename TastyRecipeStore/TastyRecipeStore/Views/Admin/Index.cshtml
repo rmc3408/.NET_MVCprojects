@@ -1,0 +1,43 @@
+﻿@model IQueryable<Recipe>
+
+@{
+    ViewBag.Title = "Customize Recipes";
+    Layout = "_AdminLayout";
+}
+
+
+<table class="table-bordered table-striped table-primary">
+    <tr>
+        <th class="text-capitalize">ID</th>
+        <th class="text-capitalize">Name</th>
+        <th class="text-capitalize">Chef</th>
+        <th class="text-capitalize">Actions</th>
+    </tr>
+
+    @foreach (var data in Model)
+    {
+        <tr>
+            <td class="text-sm-right">@data.RecipeID</td>
+            <td class="text-sm-right">@data.Name</td>
+            <td class="text-sm-left">@data.Chef</td>
+            <td class="align-content-center">
+
+                
+                <form asp-action="Delete" method="post">
+                    <input type="hidden" name="toBeDelete" value="@data.RecipeID" />
+                    <a class="btn-primary" asp-action="Edit" asp-route-selected="@data.RecipeID">Edit</a>
+                    <button class="btn-outline-danger" type="submit">Delete</button>
+                </form>
+
+            </td>
+        </tr>
+
+    }
+
+
+</table>
+
+<div class="row">
+    <a class="btn-primary" asp-action="Create"> Create new Recipe</a>
+
+</div>
