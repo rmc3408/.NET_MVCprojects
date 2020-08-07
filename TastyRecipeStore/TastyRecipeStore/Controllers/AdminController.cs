@@ -46,6 +46,7 @@ namespace TastyRecipeStore.Controllers
         }
         public ViewResult Create() => View("Edit", new Recipe());
 
+
         [HttpPost]
         public IActionResult Delete(int toBeDelete)
         {

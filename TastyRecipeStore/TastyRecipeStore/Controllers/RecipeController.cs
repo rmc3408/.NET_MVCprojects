@@ -45,6 +45,7 @@ namespace TastyRecipeStore.Controllers
             //Search for first results in the repository
             return View(repository.FoodRepository.FirstOrDefault(p => p.RecipeID == id));
         }
+        public ActionResult Crud() => RedirectToAction("Index", "Admin");
 
         public ViewResult Review()
         {

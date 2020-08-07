@@ -1,6 +1,4 @@
-﻿body {
-}
-
+﻿
 .animated {
     -webkit-transition: height 0.2s;
     -moz-transition: height 0.2s;
@@ -49,7 +47,16 @@ input {
     margin-top: 20px;
 }
 
-input > * {
+.brokenLine {
+    white-space: pre-line;
+}
+
+.line-breaks{
+    white-space:pre-line;
+
+}
+
+input, textarea > * {
     display: inline-block;
     width: 60%;
 }
