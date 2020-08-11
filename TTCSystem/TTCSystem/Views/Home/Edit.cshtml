@@ -1,0 +1,30 @@
+﻿@model Bus
+
+@{
+    ViewBag.Title = "Edit Bus";
+}
+
+<form asp-action="Edit" method="post">
+
+    <div class="form-group">
+        <label asp-for="RouteName"></label>
+        <div><span asp-validation-for="RouteName" class="text-danger"></span></div>
+        <input asp-for="RouteName" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="PlateNumber"></label>
+        <div><span asp-validation-for="PlateNumber" class="text-danger"></span></div>
+        <input asp-for="PlateNumber" class="form-control"/>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="InOperation"></label>
+        <input asp-for="InOperation" />
+    </div>
+
+    <div class="text-center">
+        <button class="btn btn-primary" type="submit">Save</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    </div>
+</form>

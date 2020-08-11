@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Bus>
+
+@{
+    ViewBag.Title = "TTS Bus List";
+}
+
+<table class="table table-sm table-bordered">
+    <tr>
+        <th>Bus Number</th>
+        <th>Route Name</th>
+        <th>Plate Number</th>
+        <th>In Operation?</th>
+        <th>Actions</th>
+    </tr>
+
+    @if (Model.Count() == 0)
+    {
+        <tr>
+            <td colspan="4" class="text-center">No Buses</td>
+        </tr>
+    }
+    else
+    {
+        foreach (Bus bus in Model)
+        {
+        <tr>
+            <td>@bus.BusNumber</td>
+            <td>@bus.RouteName</td>
+            <td>@bus.PlateNumber</td>
+            <td>@bus.InOperation</td>
+
+            <td>
+                <form asp-action="Delete" method="post">
+
+                    <input type="hidden" name="id" value="@bus.BusNumber" />
+
+                    <a class="btn btn-sm btn-primary"
+                        asp-action="Edit"
+                        asp-route-id="@bus.BusNumber">Edit</a>
+
+                    <button type="submit" class="btn btn-sm btn-danger">
+                        Delete
+                    </button>
+
+                </form>
+            </td>
+
+        </tr>
+        }
+    }
+</table>
+
+<a class="btn btn-primary" asp-action="Create">Create</a>
