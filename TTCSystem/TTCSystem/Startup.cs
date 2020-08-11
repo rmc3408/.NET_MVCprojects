@@ -41,6 +41,8 @@ namespace TTCSystem
             app.UseStaticFiles();
             app.UseStatusCodePages();
             app.UseMvcWithDefaultRoute();
+
+            
         }
     }
 }

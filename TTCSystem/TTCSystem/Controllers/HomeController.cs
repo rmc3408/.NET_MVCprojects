@@ -31,11 +31,12 @@ namespace TTCSystem.Controllers
 
         public ViewResult Edit(int id) =>
             View(repository.Buses
-                .FirstOrDefault());
+                .FirstOrDefault(p => p.BusNumber == id));
 
         [HttpPost]
         public IActionResult Edit(Bus bus)
         {
+            
             if (ModelState.IsValid)
             {
                 repository.SaveBus(bus);
