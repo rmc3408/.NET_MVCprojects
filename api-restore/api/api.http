@@ -1,6 +1,9 @@
 @api_HostAddress = http://localhost:3000
 
-GET {{api_HostAddress}}/weatherforecast/
+###
+GET {{api_HostAddress}}/Product
 Accept: application/json
 
 ###
+GET {{api_HostAddress}}/Product/2
+Accept: application/json
