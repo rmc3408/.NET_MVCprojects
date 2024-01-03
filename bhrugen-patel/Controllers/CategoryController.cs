@@ -1,13 +1,14 @@
-﻿using bhrugen_patel.Data;
-using bhrugen_patel.Models;
+﻿using NTierDataAccess.Data;
+using NTierDataAccess.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace bhrugen_patel.Controllers
+namespace mvc_beginner
 {
     public class CategoryController : Controller
     {
         private AppDbContext _context;
-        public CategoryController(AppDbContext ctx) { 
+        public CategoryController(AppDbContext ctx)
+        {
             _context = ctx;
         }
         public IActionResult Index()
@@ -16,7 +17,7 @@ namespace bhrugen_patel.Controllers
             return View(list);
         }
 
-        public IActionResult Create() 
+        public IActionResult Create()
         {
             return View();
         }

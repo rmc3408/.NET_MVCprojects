@@ -1,0 +1,16 @@
+C:\github\net_mvcprojects\NTierModels\bin\Debug\net8.0\NTierModels.deps.json
+C:\github\net_mvcprojects\NTierModels\bin\Debug\net8.0\NTierModels.dll
+C:\github\net_mvcprojects\NTierModels\bin\Debug\net8.0\NTierModels.pdb
+C:\github\net_mvcprojects\NTierModels\bin\Debug\net8.0\NTierUtility.dll
+C:\github\net_mvcprojects\NTierModels\bin\Debug\net8.0\NTierUtility.pdb
+C:\github\net_mvcprojects\NTierModels\obj\Debug\net8.0\NTierModels.csproj.AssemblyReference.cache
+C:\github\net_mvcprojects\NTierModels\obj\Debug\net8.0\NTierModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\github\net_mvcprojects\NTierModels\obj\Debug\net8.0\NTierModels.AssemblyInfoInputs.cache
+C:\github\net_mvcprojects\NTierModels\obj\Debug\net8.0\NTierModels.AssemblyInfo.cs
+C:\github\net_mvcprojects\NTierModels\obj\Debug\net8.0\NTierModels.csproj.CoreCompileInputs.cache
+C:\github\net_mvcprojects\NTierModels\obj\Debug\net8.0\NTierModels.sourcelink.json
+C:\github\net_mvcprojects\NTierModels\obj\Debug\net8.0\NTierModels.csproj.CopyComplete
+C:\github\net_mvcprojects\NTierModels\obj\Debug\net8.0\NTierModels.dll
+C:\github\net_mvcprojects\NTierModels\obj\Debug\net8.0\refint\NTierModels.dll
+C:\github\net_mvcprojects\NTierModels\obj\Debug\net8.0\NTierModels.pdb
+C:\github\net_mvcprojects\NTierModels\obj\Debug\net8.0\ref\NTierModels.dll

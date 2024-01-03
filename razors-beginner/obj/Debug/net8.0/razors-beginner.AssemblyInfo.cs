@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("razors-beginner")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a5fdc72fbe8dfcf7414798e56576e6cdf86f4608")]
 [assembly: System.Reflection.AssemblyProductAttribute("razors-beginner")]
 [assembly: System.Reflection.AssemblyTitleAttribute("razors-beginner")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

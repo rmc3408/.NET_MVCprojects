@@ -1,0 +1,12 @@
+C:\github\net_mvcprojects\NTierUtility\bin\Debug\net8.0\NTierUtility.deps.json
+C:\github\net_mvcprojects\NTierUtility\bin\Debug\net8.0\NTierUtility.dll
+C:\github\net_mvcprojects\NTierUtility\bin\Debug\net8.0\NTierUtility.pdb
+C:\github\net_mvcprojects\NTierUtility\obj\Debug\net8.0\NTierUtility.GeneratedMSBuildEditorConfig.editorconfig
+C:\github\net_mvcprojects\NTierUtility\obj\Debug\net8.0\NTierUtility.AssemblyInfoInputs.cache
+C:\github\net_mvcprojects\NTierUtility\obj\Debug\net8.0\NTierUtility.AssemblyInfo.cs
+C:\github\net_mvcprojects\NTierUtility\obj\Debug\net8.0\NTierUtility.csproj.CoreCompileInputs.cache
+C:\github\net_mvcprojects\NTierUtility\obj\Debug\net8.0\NTierUtility.sourcelink.json
+C:\github\net_mvcprojects\NTierUtility\obj\Debug\net8.0\NTierUtility.dll
+C:\github\net_mvcprojects\NTierUtility\obj\Debug\net8.0\refint\NTierUtility.dll
+C:\github\net_mvcprojects\NTierUtility\obj\Debug\net8.0\NTierUtility.pdb
+C:\github\net_mvcprojects\NTierUtility\obj\Debug\net8.0\ref\NTierUtility.dll

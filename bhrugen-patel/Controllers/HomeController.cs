@@ -1,8 +1,8 @@
-using bhrugen_patel.Models;
+using NTierDataAccess.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace bhrugen_patel.Controllers
+namespace mvc_beginner
 {
     public class HomeController : Controller
     {
