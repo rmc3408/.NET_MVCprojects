@@ -1,9 +1,11 @@
 @api_HostAddress = http://localhost:3000
+@productId = 2
 
-###
+
+### Get All products
 GET {{api_HostAddress}}/Product
 Accept: application/json
 
-###
-GET {{api_HostAddress}}/Product/2
+### Get one product
+GET {{api_HostAddress}}/Product/{{{{productId}}}}
 Accept: application/json
