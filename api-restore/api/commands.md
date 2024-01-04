@@ -17,10 +17,10 @@ add Certificate for HTTPS:
 
 
 Enter in project folder api and RUN:
-`dotnet run --launch-profile http`
+`dotnet run --launch-profile API`
 
 Hot Reload for development
-` dotnet watch run --launch-profile http`
+` dotnet watch run --launch-profile API`
 
 Install tools - package manager tools - dotnet ef
 `dotnet tool install --global dotnet-ef`

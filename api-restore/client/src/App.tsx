@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
+import agent from './api/agent'
 
 function App() {
+  const [products, setProducts] = useState([])
+
+  useEffect(() => {
+    agent.products.getProducts().then(data => setProducts(data))
+  }, [])
+  
   return (
     <div className="App">
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          ReStore
         </p>
     </div>
   );
